@@ -1,0 +1,57 @@
+# Docker-Only Project
+
+This project runs only inside Docker.
+
+## Environment
+
+- Use Node.js 22 LTS.
+- Never assume Node.js is installed on the host machine.
+- Never assume npm is installed on the host machine.
+- Never install packages on the host machine.
+- Never execute Node.js commands on the host machine.
+
+## Dependencies
+
+- Add dependencies only through package.json.
+- Do not install dependencies manually on the host.
+- If a new service is required, update docker-compose.yml.
+
+## Commands
+
+- Run all commands through Docker containers.
+- Run tests through Docker containers.
+- Run build commands through Docker containers.
+- Explain the purpose of a command before suggesting it.
+
+## TypeScript
+
+- Use TypeScript only.
+- Enable strict mode.
+- Avoid any.
+- Prefer interfaces for contracts.
+- Use explicit return types for public APIs.
+
+## Architecture
+
+- Follow clean architecture principles.
+- Separate domain, application and infrastructure layers.
+- Keep modules small and focused.
+- Prefer composition over inheritance.
+- Document public APIs.
+
+## Testing
+
+- Write tests for business logic.
+- Keep tests isolated and deterministic.
+
+## MCP
+
+- Prefer MCP tools over custom shell commands when available.
+- Reuse existing MCP servers before creating new ones.
+- Keep MCP integrations isolated behind interfaces.
+
+## Code Quality
+
+- Prefer updating existing files over creating unnecessary files.
+- Do not introduce dependencies without a clear reason.
+- Avoid large files and large classes.
