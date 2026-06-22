@@ -1,7 +1,9 @@
-﻿services:
+services:
   app:
     image: node:22-alpine
     working_dir: /app
     volumes:
       - .:/app
+    env_file:
+      - .env
     command: sh -lc "npm install; npm run build"

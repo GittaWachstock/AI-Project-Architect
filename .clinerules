@@ -9,6 +9,7 @@ This project runs only inside Docker.
 - Never assume npm is installed on the host machine.
 - Never install packages on the host machine.
 - Never execute Node.js commands on the host machine.
+- Do not read, inspect, or print the contents of `.env` files unless the user explicitly asks and it is required for the task.
 
 ## Dependencies
 
