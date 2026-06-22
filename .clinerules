@@ -11,6 +11,11 @@ This project runs only inside Docker.
 - Never execute Node.js commands on the host machine.
 - Do not read, inspect, or print the contents of `.env` files unless the user explicitly asks and it is required for the task.
 
+## Branching
+
+- Always create a new branch for task work.
+- Never commit task work directly to `master` or `main`.
+
 ## Dependencies
 
 - Add dependencies only through package.json.
